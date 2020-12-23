@@ -1,0 +1,11 @@
+* Basic functionality
+** TODO Sending data, retrieving data [0/4]
+- [ ] Insert messages into ETS table
+- [ ] return reference to record in ets table
+- [ ] send value back to client to present link
+- [ ] allow visiting the link, looking up the contents and sending it back to the client
+** Encryption
+*** Ideas
+- [ ] Seq # with HMAC to avoid replay
+- [ ] Hash generated/encoded in link to check the retrieved message
+- [ ] Can't really use split keys, as you have to send it to the server to look it up. Without using cookies/requiring people to store additional information

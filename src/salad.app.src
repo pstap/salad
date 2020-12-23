@@ -1,11 +1,12 @@
 {application, salad,
- [{description, "An OTP application"},
+ [{description, "Secure One-Time Messages"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, {salad_app, []}},
   {applications,
    [kernel,
-    stdlib
+    stdlib,
+    cowboy
    ]},
   {env,[]},
   {modules, []},
